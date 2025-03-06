@@ -20,8 +20,6 @@ let g:commentblock_commentPostfix = get(g:, 'commentblock_commentPostfix' ,repea
 function! s:CommentBlockInit()
     if &ft ==# 'vim'
         let g:commentblock_linePrefix = '" '
-    elseif &ft ==# 'java'
-        let g:commentblock_linePrefix = '// '
     else
         let g:commentblock_linePrefix = get(g:, 'commentblock_linePrefix', '')
     endif
